@@ -1,0 +1,2 @@
+.dockerignore
+#nao copia o node_module no COPY . . do Dockerfile
