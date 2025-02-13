@@ -39,7 +39,7 @@ jobs:
         uses: docker/build-push-action@v6.13.0
         with:
           context: src
-          file: src/Dockerfile
+          file: Dockerfile
           push: true
           tags:
             mateusbu/class-temperature-conversion:v1
