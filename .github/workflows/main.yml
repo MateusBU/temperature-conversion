@@ -49,6 +49,6 @@ jobs:
           context: ./src
           file: ./src/Dockerfile
           push: true
-          tags: 
+          tags: |
             mateusbu/class-temperature-conversion:v1
             mateusbu/class-temperature-conversion:latest
