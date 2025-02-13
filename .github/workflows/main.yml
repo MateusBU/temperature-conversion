@@ -33,13 +33,13 @@ jobs:
       - name: Execução do teste
         run: mocha src/test/convert.js
 
-      - name: Build and push Docker images
+      - name: Construção da imagem Docker
       # You may pin to the exact commit or the version.
       # uses: docker/build-push-action@ca877d9245402d1537745e0e356eab47c3520991
         uses: docker/build-push-action@v6.13.0
         with:
-          context: src
-          file: Dockerfile
+          context: ./src
+          file: ./src/Dockerfile
           push: true
           tags:
             mateusbu/class-temperature-conversion:v1
